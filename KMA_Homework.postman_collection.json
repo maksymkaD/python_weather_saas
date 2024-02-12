@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "93d15011-a144-4e4e-bf21-86ea26008661",
+		"name": "KMA_Homework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32799484"
+	},
+	"item": [
+		{
+			"name": "Get Weather",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"token\": \"very_bad_token\",\r\n\"requester_name\": \"Diachenko Maksym\",\r\n\"location\": \"Kyiv,Ukraine\", \r\n\"date\": \"2023-12-02\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://51.20.123.138:8000/weather/api/v1/",
+					"protocol": "http",
+					"host": [
+						"51",
+						"20",
+						"123",
+						"138"
+					],
+					"port": "8000",
+					"path": [
+						"weather",
+						"api",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Weather 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"token\": \"very_bad_token\",\r\n\"requester_name\": \"Test Testenko\",\r\n\"location\": \"Lviv,Ukraine\", \r\n\"date\": \"2023-12-02\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://51.20.123.138:8000/weather/api/v1/",
+					"protocol": "http",
+					"host": [
+						"51",
+						"20",
+						"123",
+						"138"
+					],
+					"port": "8000",
+					"path": [
+						"weather",
+						"api",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Weather 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"token\": \"very_bad_token\",\r\n\"requester_name\": \"Test Testenko\",\r\n\"location\": \"Rome,Italy\", \r\n\"date\": \"1976-05-05\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://51.20.123.138:8000/weather/api/v1/",
+					"protocol": "http",
+					"host": [
+						"51",
+						"20",
+						"123",
+						"138"
+					],
+					"port": "8000",
+					"path": [
+						"weather",
+						"api",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Weather Page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://51.20.123.138:8000/",
+					"protocol": "http",
+					"host": [
+						"51",
+						"20",
+						"123",
+						"138"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Weather No Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"token\": \"very_bad_and_invalid_token\",\r\n\"requester_name\": \"Test Testenko\",\r\n\"location\": \"Lviv,Ukraine\", \r\n\"date\": \"2023-12-02\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://51.20.123.138:8000/weather/api/v1/",
+					"protocol": "http",
+					"host": [
+						"51",
+						"20",
+						"123",
+						"138"
+					],
+					"port": "8000",
+					"path": [
+						"weather",
+						"api",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Weather Missing Params",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"token\": \"very_bad_token\",\r\n\"requester_name\": \"Test Testenko\",\r\n\"date\": \"2023-12-02\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://51.20.123.138:8000/weather/api/v1/",
+					"protocol": "http",
+					"host": [
+						"51",
+						"20",
+						"123",
+						"138"
+					],
+					"port": "8000",
+					"path": [
+						"weather",
+						"api",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
